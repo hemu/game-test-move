@@ -17,7 +17,7 @@ function Game (sockets) {
   this.gameServer = garageServer.createGarageServer(sockets, 
       {
         logging: true,
-        interpolation: true,
+        interpolation: false,
         clientSidePrediction: true,
         smoothingFactor: 0.3,
         interpolationDelay: 50

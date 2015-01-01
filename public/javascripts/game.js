@@ -30,8 +30,8 @@ $(function () {
   GarageServerIO.initializeGarageServer('http://localhost:3000', {
       logging: true,
       onReady: startGame,
-      onUpdatePlayerPrediction: GamePhysics.getNewPlayerState,
-      onInterpolation: GamePhysics.getInterpolatedState
+      onUpdatePlayerPrediction: GamePhysics.getNewPlayerState
+      // onInterpolation: GamePhysics.getInterpolatedState
   });
 
   function resizeCanvas() {
